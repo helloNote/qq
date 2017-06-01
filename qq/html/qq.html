@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>QQ Demo</title>
+    <link rel="stylesheet" href="../css/frozen.css">
+    <style>
+        .my-avater{
+            width: 35px;height: 35px;
+            margin-top:5px;
+        }
+        .my-reddot{
+            position: relative;
+        }
+        .ui-tag-reddot:after {
+
+            font-size: 32px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: .2px;
+            display: block;
+            color: rgba(0,0,0,.5);
+            position: absolute;
+
+            content: "";
+            color: #ed1000;
+            right: -5px;
+            top: -5px;
+            z-index: 9;
+            width: 26px;
+            height: 26px;
+            background: #fff;
+            border-radius: 13px;
+            line-height: 26px;
+            text-indent: -3px;
+        }
+        .my-nav{
+            width: 40%;
+            height: 30px;
+            background-color: #18b4ed;
+            line-height: 30px;
+            margin: auto;
+            margin-top: 7px;
+            border: 1px solid #ffffff;
+            border-radius: 2px;
+            font-size: 0.14rem;
+
+        }
+        .my-nav .active{
+            background-color: #ffffff;
+            color: #18b4ed;
+        }
+        .qq-blue-c{
+            color: #18b4ed;
+        }
+        .qq-blue-b{
+            background-color: #18b4ed;
+        }
+        .ui-tiled i{
+            line-height:0.8;
+        }
+        .my-menu-box{
+            color: #464646;
+            font-size: 0.1rem;
+        }
+        .ui-tiled .active{
+            color: #18b4ed;
+        }
+        .ui-tiled .active >i{
+            color: #18b4ed;
+        }
+        .my-scroller{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 56px;
+            top: 45px;
+            margin: auto;
+        }
+        .wb{
+            position: relative;
+            top: 18px;
+            right: 10px;
+        }
+      /*  .message{
+            display: none;
+        }*/
+        .text{
+            text-align: center;
+        }
+        .change_1 li{
+            height: 50px;
+        }
+        .wrap{
+            margin-top: 20px;
+            border: 1px solid #E9E9EA;
+
+        }
+        .icon{
+            padding-right: 10px;
+        }
+        .line{
+            border-bottom: 1px solid #E9E9EA;
+        }
+        .tis{
+            top: -58px;
+            left: 16px;
+            position: relative;
+        }
+    </style>
+</head>
+<body ontouchmove="return false;">
+<!--头部-->
+<header class="ui-header ui-header-positive ui-border-b ">
+    <div class="ui-row-flex">
+    <div class="ui-col ">
+        <div  class="my-reddot ">
+            <div class="ui-avatar-s  my-avater">
+                <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+            </div>
+        </div>
+    </div>
+    <div class="ui-col ui-col-4 text">
+
+        <ul class="ui-tiled  my-nav" style="display: none">
+            <li class="active" ><div>消息</div></li>
+            <li><div>电话</div></li>
+        </ul>
+        <h4 >动态</h4>
+
+    </div>
+    <div class="ui-col ">
+        <i class="ui-icon-add qq-blue-c" style="display: none"></i>
+        <h4>更多</h4>
+    </div>
+</div>
+</header>
+<!--脚步-->
+<footer class="ui-footer ui-footer-btn  ui-btn-group ui-footer-stable">
+    <footer class="ui-footer ui-footer-stable ui-border-t">
+        <ul class="ui-tiled  my-menu-box">
+            <li id="mess_1" class="active" ><i class="ui-icon-info"></i><div class="my-menu" >消息</div></li>
+            <li  ><i class="ui-icon-personal"></i><div class="my-menu">联系人</div></li>
+            <li  id="lx_1" ><i class="ui-icon-trend"></i><div class="my-menu">动态</div></li>
+        </ul>
+    </footer>
+</footer>
+<!--中间-->
+<section class="ui-container" >
+
+    <div class="ui-selector-content  my-scroller ui-scroller scroll_1" >
+        <div class="message">
+            <div class="ui-searchbar-wrap ui-border-b">
+                <div class="ui-searchbar ui-border-radius">
+                    <i class="ui-icon-search"></i>
+                    <div class="ui-searchbar-text">搜索</div>
+                    <div class="ui-searchbar-input"><input value="" type="tel" placeholder="搜索号码（2-10位）" autocapitalize="off"></div>
+                    <i class="ui-icon-close"></i>
+                </div>
+                <button class="ui-searchbar-cancel">取消</button>
+            </div>
+
+        <ul class="ui-list ui-border-b ">
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t">
+                    <h4>飞翔的企鹅</h4>
+                    <h6>二娃：天气晴朗</h6>
+                </div>
+                <div class="ui-badge wb">123</div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+                <div class="ui-badge wb">53</div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4>
+                    <div class="ui-nowrap-flex ui-whitespace">
+                        <h6>大地：一行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容</h6>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4>
+                    <div class="ui-nowrap-flex ui-whitespace">
+                        <h6>火车：呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜</h6>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+                <div class="ui-badge wb">43</div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+                <div class="ui-badge wb">14</div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4>
+                    <div class="ui-nowrap-flex ui-whitespace">
+                        <h6>二哈：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h6>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+            </li>
+            <li>
+                <div class="ui-avatar-s">
+                    <span style="background-image:url(../imgs/1.jpg)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t"><h4>飞翔的企鹅</h4></div>
+            </li>
+
+        </ul>
+        </div>
+    </div>
+        <!---------------------------动态--------------------------------------------->
+    <div class="ui-selector-content  my-scroller  ui-scroller_1 scroll_2" style="display: none">
+        <div class="change" >
+            <div class="ui-searchbar-wrap ui-border-b">
+                <div class="ui-searchbar ui-border-radius">
+                    <i class="ui-icon-search"></i>
+                    <div class="ui-searchbar-text">搜索实时新闻</div>
+                    <div class="ui-searchbar-input"><input value="" type="tel" placeholder="搜索实时新闻" autocapitalize="off"></div>
+                    <i class="ui-icon-close"></i>
+                </div>
+                <button class="ui-searchbar-cancel">取消</button>
+            </div>
+
+            <div class="ui-row-flex ui-whitespace text" style="border-bottom: 1px solid #E9E9EA;padding-bottom: 10px;height: 73px;overflow: hidden">
+                <div class="ui-col ui-col">
+
+                    <i class="ui-icon-add-group" style="color: #F6D253"></i>
+                        <h6>好友动态</h6>
+                       <div class="ui-reddot-border tis">
+                            <span class="ui-avatar-tiled"><span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span></span>
+                      </div>
+                </div>
+                <div class="ui-col ui-col">
+                    <i class="ui-icon-hall" style="color: #F15F5E" ></i>
+                    <h6>附近</h6>
+                </div>
+                <div class="ui-col ui-col">
+                    <i class="ui-icon-collect" style="color: #F4D63E"></i>
+                    <h6>兴趣部落</h6>
+                    <div class="ui-reddot-border tis">
+                        <span class="ui-avatar-tiled"><span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <ul class="ui-list ui-list-function ui-list-link ui-border-tb change_1">
+                    <li class="ui-border-t">
+                            <i class="ui-icon-emo icon" style="color: #F9A959"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">日志</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-play icon" style="color: #88D041"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">看点</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-scan icon" style="color: #FAA24C"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">动漫</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-pc icon" style="color: #9ACA52"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">音乐</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-voice icon" style="color: #07CCA6"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">NOW直播</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-home icon" style="color: #FCD14E"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">热门活动</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-history icon" style="color: #34b9cd"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">应用包</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-cart icon" style="color: #64db5b"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">吃喝玩乐</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-dressup icon" style="color: #FCD14E"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">同城服务</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-home icon" style="color: #4cc9cd"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">腾讯课堂</h4>
+                        </div>
+                    </li>
+                    <li class="ui-border-t">
+                        <i class="ui-icon-wallet icon" style="color: #FCD14E"></i>
+                        <div class="ui-list-info line">
+                            <h4 class="ui-nowrap">热门活动</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+</div>
+
+
+</section>
+<script src="../lib/zepto.min.v1.1.6.js"></script>
+<script src="../lib/zepto.tocuh.js"></script>
+<script src="../js/frozen.js"></script>
+<script type="text/javascript">
+$(function(){
+    var scroll = new fz.Scroll('.ui-scroller', {
+        scrollY: true,
+        bounce:true
+    });
+
+    $(".ui-scroller")[0].ontouchend=function() {
+        var s = scroll.getComputedPosition();
+        scroll.refresh();
+        console.log(s);
+    };
+    var scroll_1 = new fz.Scroll('.ui-scroller_1', {
+        scrollY: true,
+        bounce:true
+    });
+
+    $(".ui-scroller_1")[0].ontouchend=function() {
+        var s = scroll_1.getComputedPosition();
+        scroll_1.refresh();
+        console.log(s);
+    }
+
+    console.log(scroll);
+//    scrollTo(20)
+
+    $('.my-nav > li').on("tap",function(){
+        $('.my-nav > li').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.my-menu-box > li').on("tap",function(){
+        $('.my-menu-box > li').removeClass('active');
+        $(this).addClass('active');
+
+    });
+
+    $("#mess_1").on("tap",function(){
+        $(".scroll_1").show()
+        $(".scroll_2").hide()
+    })
+    $("#lx_1").on("tap",function(){
+        $(".scroll_1").hide()
+        $(".scroll_2").show()
+    })
+
+});
+
+
+
+</script>
+</body>
+ 

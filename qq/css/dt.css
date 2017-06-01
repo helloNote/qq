@@ -1,0 +1,91 @@
+body{
+    background: url("../img/007.jpg");
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    background: transparent;
+}
+.left,.right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.right > span{
+    font-size: 1px;
+    display: block;
+
+}
+.right i{
+  margin-right: 3px;
+    color: #F6C40C;
+}
+.start{
+    width: 100%;
+    height: 10px;
+}
+
+.content{
+    margin-top: 15px;
+    width: 100%;
+
+}
+.wrap{
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.pl{
+   padding-top: 15px;
+}
+
+.t1_1{
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    padding-right: 10px;
+}
+.t1_3{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.my-scroller{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 56px;
+    top: 45px;
+    margin: auto;
+}
+.t1_4{
+    padding: 20px 0 10px 10px;
+
+}
+.t1_4_1{
+    float: left;
+}
+.icon{
+    float: right;
+}
+.icon > span{
+   margin-right: 30px;
+    color: gray;
+}
+.inpu{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.inp_1{
+    width: 80%;
+    height: 25px;
+    padding-left: 15px;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+    border: 1px solid gray;
+}
